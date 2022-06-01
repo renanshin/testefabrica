@@ -393,12 +393,12 @@ p {
 --------------------------------------------------------------*/
 #hero {
   background: url("../img/home-bg.jpg") repeat scroll center center/cover;
-  height: 100vh;
+  height: 80vh;
   width: 100%;
 }
 
 #hero .hero-content {
-  height: 100vh;
+  height: 80vh;
   text-align: left;
   width: 100%;
   display: flex;
@@ -483,6 +483,26 @@ p {
   }
   .breadcrumbs ol li {
     display: inline-block;
+  }
+  #hero {
+    height: 30vh;
+    width: 85%;
+  }
+  
+  #hero .hero-content {
+    height: 30vh;
+    text-align: right;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .hero-content h1 {  
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #fff;
   }
 }
 
