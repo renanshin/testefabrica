@@ -554,7 +554,7 @@ p {
 }
 
 .diretoria-container{
-  text-align: justify;
+  text-align: center;
   justify-content: center;
   align-items: center;
   background: url("/assets/img/dinheiros.jpg") repeat scroll center center/cover;
@@ -565,6 +565,9 @@ p {
 .diretoria-container img{
   height: 40vh;
   max-width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 
 }
 
@@ -587,6 +590,7 @@ p {
 }
 
 #diretoria p{
+  text-align: justify;
   font-size: 25px;
   font-weight: 500;
   opacity: 1;
