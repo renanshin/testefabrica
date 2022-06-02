@@ -554,7 +554,7 @@ p {
 }
 
 .diretoria-container{
-  text-align: center;
+  text-align: justify;
   justify-content: center;
   align-items: center;
   background: url("/assets/img/dinheiros.jpg") repeat scroll center center/cover;
@@ -584,6 +584,21 @@ p {
 
 #diretoria .js-bounty{
   color: blue;
+}
+
+#diretoria p{
+  font-size: 25px;
+  font-weight: 500;
+  opacity: 1;
+  background-image: linear-gradient(
+    to left,
+    #efefef 0,
+    #fff 22%,
+    #ddd 60%, 
+    #9a9a9a 100%
+    );
+    color:transparent;
+    -webkit-background-clip:text;
 }
 
 /*--------------------------------------------------------------
