@@ -477,7 +477,7 @@ p {
   font-weight: 600;
 
   background: rgb(227,130,239);
-background: linear-gradient(90deg, rgba(227,130,239,1) 0%, rgba(121,108,9,1) 41%, rgba(0,212,255,1) 100%);}
+  background: linear-gradient(90deg, rgba(227,130,239,1) 0%, rgba(121,108,9,1) 41%, rgba(0,212,255,1) 100%);}
 
 .menu .menuitem{
 
@@ -557,7 +557,9 @@ background: linear-gradient(90deg, rgba(227,130,239,1) 0%, rgba(121,108,9,1) 41%
   text-align: center;
   justify-content: center;
   align-items: center;
-
+  background: url("/assets/img/dinheiros.jpg") repeat scroll center center/cover;
+  opacity: 0.5;
+  z-index: -1; 
 }
 
 .diretoria-container img{
