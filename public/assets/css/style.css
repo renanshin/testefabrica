@@ -586,6 +586,35 @@ p {
   color: blue;
 }
 
+/*--------------------------------------------------------------
+# Comércio
+--------------------------------------------------------------*/
+#comercio {
+  width: 100%; 
+  height: auto;
+  background-color: #FFF;
+  justify-content: center;
+  align-items: center;
+}
+
+#comercio h2{
+  color: blue;
+}
+
+/*--------------------------------------------------------------
+# Marketing
+--------------------------------------------------------------*/
+#marketing {
+  width: 100%; 
+  height: auto;
+  background-color: #FFF;
+  justify-content: center;
+  align-items: center;
+}
+
+#marketing h2{
+  color: red;
+}
 
 
 /*--------------------------------------------------------------
