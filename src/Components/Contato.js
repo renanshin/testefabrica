@@ -71,12 +71,12 @@ const TimeCards = styled.div`
 
 const Contato = () => {
   return (
-    <section className="contato">
+    <section className="contato" id="nossotime">
       <div
         className="header-contato"
         style={{ display: "flex", justifyContent: "center" }}
       >
-        <h2>Contato</h2>
+        <h2>Nosso Time</h2>
       </div>
 
       <TimeCards>
