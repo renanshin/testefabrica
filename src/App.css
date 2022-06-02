@@ -24,6 +24,13 @@
   color: white;
 }
 
+h2 {
+  color: rgb(228, 228, 228);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 .App-link {
   color: #61dafb;
 }

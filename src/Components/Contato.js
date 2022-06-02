@@ -74,6 +74,7 @@ const Contato = () => {
         style={{ display: "flex", justifyContent: "center" }}
       >
         <h2>Nosso Time</h2>
+        <p>Mexa o celular para ver o efeito</p>
       </div>
 
       <TimeCards>
