@@ -623,13 +623,13 @@ p {
 #lojas {
   width: 100%; 
   height: auto;
-  background-color: #FFF;
+  background-color: rgb(212, 0, 0);
   justify-content: center;
   align-items: center;
 }
 
 #lojas h2{
-  color: blue;
+  color: rgb(245, 245, 245);
 }
 
 /*--------------------------------------------------------------
@@ -638,14 +638,14 @@ p {
 #marketing {
   width: 100%; 
   height: auto;
-  background-color: #FFF;
+  background-color: rgb(10, 0, 143);
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
 #marketing h2{
-  color: red;
+  color: rgb(111, 0, 255);
 }
 
 #marketing .marketinglottie{
