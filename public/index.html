@@ -54,6 +54,7 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/vendor/odometer/odometer-theme-train-station.css" rel="stylesheet" />
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -455,9 +456,10 @@
           <h3>Resultado de pessoas mais felizes</h3>
 
           <div class="numerosdiretoria row">
-            <div class="js-bounty col">31%</div>
-            <div class="js-bounty2 col">3x</div>
-            <div class="js-bounty3 col">37%</div>         
+            <div id="produtivas" class="odometer col">0</div>
+            <div id="criativas" class="odometer col">0x</div>
+            <div id="vendem" class="odometer col">0%</div>
+            
           </div>
 
           <div class="titulosnumerosdiretoria row">
@@ -705,12 +707,29 @@
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/vendor/typed.js/typed.min.js"></script>
+    <script src="assets/vendor/odometer/odometer-min.js"></script>
     <script src="assets/vendor/bounty/bounty.js"></script>
     <script>
       bounty.default({ el: ".js-bounty", value: "31%" });
       bounty.default({ el: ".js-bounty2", value: "3x" });
       bounty.default({ el: ".js-bounty3", value: "37%" });
     </script>
+
+    
+    <script>setTimeout(function(){
+      produtivas.innerHTML = 31;
+    }, 1000);</script>
+
+   
+    <script>setTimeout(function(){
+    criativas.innerHTML = 3;
+    }, 1000);</script>
+    
+    <script>setTimeout(function(){
+    vendem.innerHTML = 37;
+
+    }, 1000);</script>
+
   
 
     <!-- Template Main JS File -->
