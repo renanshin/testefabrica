@@ -492,7 +492,7 @@ p {
 
 .menu .menuitem{
 
-  margin: 15px auto;
+  margin: 20px auto;
 }
 
 /*--------------------------------------------------------------
@@ -505,6 +505,20 @@ p {
   background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(236,230,181,1) 41%, rgba(192,243,254,1) 100%);  text-align: center;
   justify-content: center;
   align-items: center;
+}
+
+#rh h2{
+  background-image: linear-gradient(
+    to right,
+    #1d014a 0,
+          #4846c7 22%, 
+
+    #956eae 55%,
+    #4b0268 78%,
+    #090014 100%
+    );
+    color:transparent;
+    -webkit-background-clip:text;
 }
 
 #rh .rhlottie{
@@ -638,14 +652,45 @@ p {
 #marketing {
   width: 100%; 
   height: auto;
-  background-color: rgb(10, 0, 143);
+  background: linear-gradient(230deg, #ff0000, #0042ff, #ff0000);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 20s ease infinite;
+    -moz-animation: AnimationName 20s ease infinite;
+    animation: AnimationName 20s ease infinite;
+    @-webkit-keyframes AnimationName {
+      0%{background-position:0% 51%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 51%}
+    }
+    @-moz-keyframes AnimationName {
+        0%{background-position:0% 51%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 51%}
+    }
+    @keyframes AnimationName {
+        0%{background-position:0% 51%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 51%}
+    }
+
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
 #marketing h2{
-  color: rgb(111, 0, 255);
+  font-size: 25px;
+  font-weight: 700;
+  opacity: 0.9;
+  background-image: linear-gradient(
+    to left,
+    #efefef 0,
+    #fff 22%,
+    #ddd 60%, 
+    #9a9a9a 100%
+    );
+    color:transparent;
 }
 
 #marketing .marketinglottie{
@@ -738,42 +783,7 @@ p {
   }
 }
 
-/*-----------------------------------------------------------------------------------*/
-/*  About
-/*-----------------------------------------------------------------------------------*/
-#about {
-  width: 100%;
-  height: auto;
-  background: #f7f7f7;
-  padding-top: 120px;
-}
 
-#about .div-img-bg {
-  padding-bottom: 30px;
-  border: 20px solid #b8a07e;
-}
-
-#about .div-img-bg .about-img img {
-  width: 100%;
-  box-shadow: 0px 0px 85px 0px rgba(0, 0, 0, 0.14);
-  margin-top: -60px;
-  margin-left: 40px;
-  height: 400px;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-
-#about .about-descr .p-heading {
-  font-family: "Playfair Display", serif;
-  font-size: 28px;
-  text-align: left;
-}
-
-#about .about-descr .separator {
-  max-width: 80%;
-  margin-bottom: 0;
-  text-align: left;
-}
 
 /*--------------------------------------------------------------
 # Services
@@ -823,201 +833,26 @@ p {
 }
 
 /*--------------------------------------------------------------
-# Portfolio
---------------------------------------------------------------*/
-#portfolio {
-  position: relative;
-  padding-bottom: 50px;
-}
-#portfolio #portfolio-flters {
-  padding: 0;
-  margin: 0 auto 35px auto;
-  list-style: none;
-  text-align: center;
-  border-radius: 50px;
-  padding: 2px 15px;
-}
-#portfolio #portfolio-flters li {
-  cursor: pointer;
-  display: inline-block;
-  padding: 10px 15px 8px 15px;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1;
-  text-transform: uppercase;
-  color: #999999;
-  margin-bottom: 5px;
-  transition: all 0.3s ease-in-out;
-}
-#portfolio #portfolio-flters li:hover, #portfolio #portfolio-flters li.filter-active {
-  color: #b8a07e;
-}
-#portfolio #portfolio-flters li:last-child {
-  margin-right: 0;
-}
-#portfolio .portfolio-item {
-  margin-bottom: 30px;
-}
-#portfolio .portfolio-item .portfolio-info {
-  opacity: 0;
-  position: absolute;
-  left: 30px;
-  right: 30px;
-  bottom: 0;
-  z-index: 3;
-  transition: all ease-in-out 0.3s;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 15px;
-}
-#portfolio .portfolio-item .portfolio-info h4 {
-  font-size: 18px;
-  color: #666;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-#portfolio .portfolio-item .portfolio-info p {
-  color: #999;
-  font-size: 14px;
-  margin: 0;
-  padding: 0;
-}
-#portfolio .portfolio-item .portfolio-info .preview-link, #portfolio .portfolio-item .portfolio-info .details-link {
-  position: absolute;
-  right: 40px;
-  font-size: 24px;
-  top: calc(50% - 18px);
-  color: #b8a07e;
-}
-#portfolio .portfolio-item .portfolio-info .preview-link:hover, #portfolio .portfolio-item .portfolio-info .details-link:hover {
-  color: #cab89f;
-}
-#portfolio .portfolio-item .portfolio-info .details-link {
-  right: 10px;
-}
-#portfolio .portfolio-item:hover .portfolio-info {
-  opacity: 1;
-  bottom: 20px;
-}
-
-/*--------------------------------------------------------------
-# Portfolio Details
---------------------------------------------------------------*/
-.portfolio-details {
-  padding-top: 40px;
-}
-.portfolio-details .portfolio-details-slider img {
-  width: 100%;
-}
-.portfolio-details .portfolio-details-slider .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 1;
-  border: 1px solid #b8a07e;
-}
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #b8a07e;
-}
-.portfolio-details .portfolio-info {
-  padding: 30px;
-  box-shadow: 0px 0 30px rgba(75, 74, 74, 0.08);
-}
-.portfolio-details .portfolio-info h3 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #eee;
-}
-.portfolio-details .portfolio-info ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
-}
-.portfolio-details .portfolio-info ul li + li {
-  margin-top: 10px;
-}
-.portfolio-details .portfolio-description {
-  padding-top: 30px;
-}
-.portfolio-details .portfolio-description h2 {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-.portfolio-details .portfolio-description p {
-  padding: 0;
-}
-
-/*--------------------------------------------------------------
-# Journal
---------------------------------------------------------------*/
-#journal, #journal-blog {
-  height: auto;
-  width: 100%;
-  background: #f7f7f7;
-  padding-bottom: 60px;
-  position: relative;
-}
-
-#journal-blog {
-  background: #fff;
-  padding-bottom: 30px;
-}
-
-#journal .journal-block {
-  display: inline-block;
-  height: auto;
-  width: 100%;
-}
-
-#journal .journal-block .journal-info {
-  position: relative;
-}
-
-.journal-block .journal-info img {
-  max-width: 100%;
-}
-
-.journal-block .journal-info .journal-txt {
-  padding: 25px 0px;
-  position: relative;
-}
-
-.journal-block .journal-info .journal-txt h4 a {
-  display: block;
-  font-size: 19px;
-  line-height: 24px;
-  margin: 0 0 13px 0;
-  font-weight: 500;
-  color: #292929;
-  transition: all 0.5s ease-in-out 0s;
-}
-
-.journal-block .journal-info .journal-txt h4 a:hover {
-  color: #b8a07e;
-  transition: all 0.5s ease-in-out 0s;
-}
-
-.journal-block .journal-info .journal-txt p {
-  margin: 0;
-  font-size: 14px;
-  line-height: 24px;
-}
-
-/*--------------------------------------------------------------
-# Journal
+# Depoimentos
 --------------------------------------------------------------*/
 #contact {
   height: auto;
   width: 100%;
+  color: #291c04;
+  background: url("/assets/img/wood.jpg")
+}
+
+#contact h2{
+  color: #291c04;
+  font-size: x-large;
+}
+
+#contact .contact-block1 {
+  color: #291c04;
 }
 
 .contact-details {
+  color: #291c04;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -1035,6 +870,7 @@ p {
 #contact textarea {
   min-height: 160px;
 }
+
 
 .php-email-form .error-message {
   display: none;
@@ -1694,6 +1530,11 @@ blockquote {
     display: inline-block;
     margin-right: 0;
   }
+}
+
+.video{
+  text-align: center;
+  width: 100%;
 }
 
 
