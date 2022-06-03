@@ -150,6 +150,7 @@ p {
   visibility: hidden;
   opacity: 0;
   right: 15px;
+  margin-right: 50px;
   bottom: 15px;
   z-index: 996;
   background: #b8a07e;
@@ -309,6 +310,7 @@ p {
   display: none;
   line-height: 0;
   transition: 0.5s;
+  margin-right: 40px;
 }
 .mobile-nav-toggle.bi-x {
   color: #fff;
@@ -568,6 +570,7 @@ p {
   align-items: center;
   background: url("/assets/img/dinheiros.jpg") repeat scroll center center/cover;
   opacity: 0.5;
+  margin: 0 7px;
   z-index: -1; 
 }
 
@@ -1687,3 +1690,5 @@ blockquote {
     margin-right: 0;
   }
 }
+
+

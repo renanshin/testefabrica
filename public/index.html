@@ -140,6 +140,20 @@
               ></a>
             </li>
           </ul>
+          
+            <script src="https://cdn.jsdelivr.net/npm/js-confetti@0.8.0/dist/js-confetti.browser.js"></script>
+            <script>const jsConfetti = new JSConfetti();
+
+              setTimeout(() => {
+                jsConfetti.addConfetti({
+                  emojis: ['😃', '😁'],
+                  emojiSize: 100,
+                  confettiNumber: 300,
+                })
+              }, 500)</script>
+          
+
+
         </div>
       </div>
     </div>
@@ -511,6 +525,7 @@
 
       <video
         id="background-video"
+        width="320" height="240"
         autoplay
         loop
         muted
