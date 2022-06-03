@@ -618,9 +618,9 @@ p {
 }
 
 /*--------------------------------------------------------------
-# Comércio
+# Lojas
 --------------------------------------------------------------*/
-#comercio {
+#lojas {
   width: 100%; 
   height: auto;
   background-color: #FFF;
@@ -628,7 +628,7 @@ p {
   align-items: center;
 }
 
-#comercio h2{
+#lojas h2{
   color: blue;
 }
 
@@ -641,10 +641,15 @@ p {
   background-color: #FFF;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 #marketing h2{
   color: red;
+}
+
+#marketing .marketinglottie{
+  display: inline-block;
 }
 
 
