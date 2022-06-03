@@ -685,6 +685,10 @@ p {
   color: #6c757d;
   content: "/";
 }
+
+/*--------------------------------------------------------------
+# para especifico mobile
+--------------------------------------------------------------*/
 @media (max-width: 768px) {
   .breadcrumbs .d-flex {
     display: block !important;
@@ -697,7 +701,7 @@ p {
   }
   #hero {
     background: url("/home-bg-mobile.jpg") repeat scroll center center/cover;
-    height: 45vh;
+    height: 90vh;
     width: 100%;
   }
   
@@ -708,6 +712,9 @@ p {
     display: flex;
     justify-content: center;
     flex-direction: column;
+  }
+  #hero .logo-inicio {
+    margin-top: 80vh;
   }
   .hero-content h1 {  
     font-size: 22px;
