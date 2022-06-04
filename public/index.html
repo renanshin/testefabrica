@@ -55,6 +55,8 @@
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
     <link href="assets/vendor/odometer/odometer-theme-train-station.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -103,6 +105,11 @@
       </div>
     </header>
     <!-- End Header -->
+
+    <div >
+      <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+      <p>Clients</p>
+    </div>
 
     <!-- ======= Hero Section ======= -->
     <div id="hero" class="home">
@@ -173,6 +180,22 @@
     </div>
     <!-- End Menu -->
 
+    <ul>
+      <li>
+        <a href="#">
+          <h2>Titsadfa1</h2>
+          <p>Texg fd fg ent #1</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <h2>Title #2</h2>
+          <p>Text Content #2</p>
+        </a>
+      </li>
+      […]
+    </ul>
+
     <main id="main">
       <!-- ======= Rh Section ======= -->
       <div id="rh">
@@ -192,9 +215,9 @@
             </div>
             <div class="rhconjunto-caracteristicas row">
 
-                <div class="col">Melhorar clima organizacional</div>
-                <div class="col">Integração de colaboradores</div>
-                <div class="col">Estreitar</div>         
+                <div class="postit postit-esquerda postit-verde col">Melhorar clima organizacional</div>
+                <div class="postit postit-direita postit-rosa col">Integração de colaboradores</div>
+                <div class="postit postit-esquerda-leve postit-amarelo col">Estreitar</div>         
               
             </div>
           </div>
@@ -213,9 +236,9 @@
             </div>
             <div class="rhconjunto-caracteristicas row">
 
-                <div class="col">Festa da empresa</div>
-                <div class="col">Entretenimento para Funcionários</div>
-                <div class="col">Semana SIPAT</div>         
+                <div class="postit postit-reto postit-rosa col">Festa da empresa</div>
+                <div class="postit postit-esquerda postit-azul col">Entretenimento para Funcionários</div>
+                <div class="postit postit-direita postit-verde col">Semana SIPAT</div>         
               
             </div>
           </div>
@@ -456,9 +479,26 @@
           <h3>Resultado de pessoas mais felizes</h3>
 
           <div class="numerosdiretoria row">
-            <div id="produtivas" class="odometer col">0</div>
-            <div id="criativas" class="odometer col">0x</div>
-            <div id="vendem" class="odometer col">0%</div>
+            <div class="col">
+              <div class="col">
+                <span data-purecounter-start="0" data-purecounter-end="31" data-purecounter-duration="1.5" class="purecounter"></span>
+                <span style="margin-left: -10px;">%</span>
+              </div>
+            </div>
+            <div class="col">
+              <div class="col">
+                <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="0.5" class="purecounter"></span>
+                <span style="margin-left: -10px;">x</span>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="col">
+                <span data-purecounter-start="0" data-purecounter-end="37" data-purecounter-duration="2.5" class="purecounter"></span>
+                <span style="margin-left: -10px;">%</span>
+              </div>
+              
+            </div>
             
           </div>
 
@@ -707,7 +747,6 @@
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/vendor/typed.js/typed.min.js"></script>
-    <script src="assets/vendor/odometer/odometer-min.js"></script>
     <script src="assets/vendor/bounty/bounty.js"></script>
     <script>
       bounty.default({ el: ".js-bounty", value: "31%" });
@@ -716,21 +755,8 @@
     </script>
 
     
-    <script>setTimeout(function(){
-      produtivas.innerHTML = 31;
-    }, 1000);</script>
 
-   
-    <script>setTimeout(function(){
-    criativas.innerHTML = 3;
-    }, 1000);</script>
-    
-    <script>setTimeout(function(){
-    vendem.innerHTML = 37;
-
-    }, 1000);</script>
-
-  
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>

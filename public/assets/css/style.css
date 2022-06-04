@@ -586,10 +586,23 @@ p {
 }
 
 #diretoria h3{
+  
   text-align: center;
   justify-content: center;
   align-items: center;
   margin: 10px;
+  opacity: 1;
+  background-image: linear-gradient(
+    to left,
+    #989898 0,
+    rgb(86, 85, 85) 22%,
+    rgb(184, 184, 184) 50%,
+    rgb(255, 255, 255) 65%,
+    rgb(180, 180, 180) 80%, 
+    #676767 100%
+    );
+    color:transparent;
+    -webkit-background-clip:text;
 }
 
 .titulosnumerosdiretoria {
@@ -624,20 +637,18 @@ p {
 .numerosdiretoria {
   text-align: center;
   padding-top: 20px;
-  font-size: 35px;
+  padding-bottom: 10px;
+  font-size: 38px;
   font-weight: 700;
   font-family: Roboto;
   fill: #fff;
   background-color: black;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+
+  text-shadow: 0px 0px 4px rgba(255,255,255,0.7);
 }
 
 #diretoria .numerosdiretoria{
-  color: blue;
-}
-
-#diretoria .js-bounty{
-  color: blue;
+  background-color: black;
 }
 
 #diretoria p{
@@ -1562,5 +1573,68 @@ blockquote {
   text-align: center;
   width: 100%;
 }
+
+ul,li{
+  list-style:none;
+}
+ul{
+  font-family: 'Reenie Beanie';
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.postit{
+  color:black;
+  background:#cfc;
+  height:10em;
+  width:10em;
+  padding:1em;
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  transition: transform .15s linear;
+}
+
+.postit-esquerda{
+  transform: rotate(-6deg);
+}
+
+.postit-direita{
+  transform: rotate(9deg);
+}
+.postit-reto{
+  transform: rotate(2deg);
+}
+
+.postit-esquerda-leve{
+  transform: rotate(-2);
+}
+
+.postit-verde{
+  color:black;
+  background:#cfc;
+}
+
+.postit-amarelo{
+  color:black;
+  background:rgb(247, 255, 137);
+}
+
+.postit-rosa{
+  color:black;
+  background:rgb(255, 173, 179);
+}
+
+.postit-azul{
+  color:black;
+  background:rgb(137, 202, 255);
+}
+
+.postit:hover , .postit:focus  {
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  transform: scale(1.25);
+  position:relative;
+  z-index:5;
+}
+
 
 
