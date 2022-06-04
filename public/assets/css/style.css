@@ -5,7 +5,6 @@
 * License: https://bootstrapmade.com/license/
 */
 
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -13,7 +12,7 @@ body {
   background: #ffffff;
   color: #898989;
   font-family: "Poppins", helvetica;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 300;
   line-height: 20px;
   letter-spacing: 0.02em;
@@ -21,6 +20,8 @@ body {
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
+  text-align: center;
+  justify-content: center;
 }
 
 /* do not group these rules */
@@ -46,13 +47,26 @@ body {
   color: whitesmoke !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
 h2 {
   color: #292929;
-  font-weight: 600;
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: "Times New Roman", serif;
+  text-align: center;
+  letter-spacing: 15px;
+  font-weight: 700;
+}
+h3 {
+  font-size: 1.75rem;
 }
 
 h4 {
@@ -74,7 +88,7 @@ a:hover {
 p {
   margin: 25px 0;
   padding: 0;
-  font-size: 15px;
+  font-size: 17px;
   color: #999999;
   line-height: 28px;
 }
@@ -101,7 +115,8 @@ p {
   text-transform: uppercase;
 }
 
-.btn:hover, .btn:focus {
+.btn:hover,
+.btn:focus {
   color: #fff;
 }
 
@@ -142,7 +157,7 @@ p {
 
 .paddsection {
   padding-top: 50px;
-  padding-bottom: 10px;
+  padding-bottom: 50px;
 }
 
 .paddsections {
@@ -208,7 +223,8 @@ p {
   top: -100%;
   box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.08);
 }
-#header.header-scrolled, #header.header-inner-pages {
+#header.header-scrolled,
+#header.header-inner-pages {
   top: 0;
 }
 #header .logo {
@@ -252,7 +268,8 @@ p {
 .navbar li {
   position: relative;
 }
-.navbar a, .navbar a:focus {
+.navbar a,
+.navbar a:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -264,12 +281,16 @@ p {
   white-space: nowrap;
   transition: 0.3s;
 }
-.navbar a i, .navbar a:focus i {
+.navbar a i,
+.navbar a:focus i {
   font-size: 12px;
   line-height: 0;
   margin-left: 5px;
 }
-.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover > a {
   color: #b8a07e;
 }
 .navbar .dropdown ul {
@@ -296,7 +317,9 @@ p {
 .navbar .dropdown ul a i {
   font-size: 12px;
 }
-.navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover > a {
   color: #b8a07e;
 }
 .navbar .dropdown:hover > ul {
@@ -377,15 +400,19 @@ p {
   overflow-y: auto;
   transition: 0.3s;
 }
-.navbar-mobile a, .navbar-mobile a:focus {
+.navbar-mobile a,
+.navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
   color: #4b4a4a;
 }
-.navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
+.navbar-mobile a:hover,
+.navbar-mobile .active,
+.navbar-mobile li:hover > a {
   color: #b8a07e;
 }
-.navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
+.navbar-mobile .getstarted,
+.navbar-mobile .getstarted:focus {
   margin: 15px;
 }
 .navbar-mobile .dropdown ul {
@@ -408,7 +435,9 @@ p {
 .navbar-mobile .dropdown ul a i {
   font-size: 12px;
 }
-.navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
+.navbar-mobile .dropdown ul a:hover,
+.navbar-mobile .dropdown ul .active:hover,
+.navbar-mobile .dropdown ul li:hover > a {
   color: #b8a07e;
 }
 .navbar-mobile .dropdown > .dropdown-active {
@@ -481,7 +510,7 @@ p {
 }
 
 .hero-content .list-social li {
-  display:inline-block;
+  display: inline-block;
   margin-right: 10px;
 }
 
@@ -493,29 +522,32 @@ p {
 /*--------------------------------------------------------------
 # Menu Mobile
 --------------------------------------------------------------*/
-.menu{
+.menu {
   height: 50vh;
   width: 100%;
   text-align: center;
   justify-content: center;
-  font-size: 1.5rem;
   color: #292929;
   font-weight: 600;
 
-  background: rgb(227,130,239);
-  background: linear-gradient(90deg, rgba(227,130,239,1) 0%, rgba(121,108,9,1) 41%, rgba(0,212,255,1) 100%);
+  background: rgb(227, 130, 239);
+  background: linear-gradient(
+    90deg,
+    rgba(227, 130, 239, 0.6) 0%,
+    rgba(121, 108, 9, 0.6) 41%,
+    rgba(0, 212, 255, 0.6) 100%
+  );
 }
 
-.menu h2{
+.menu h2 {
   color: rgb(73, 73, 73);
   font-size: small;
   font-weight: 200;
   letter-spacing: 8px;
-  background-color: rgba(255,255,255,0.2)
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
-.menu .menuitem{
-
+.menu .menuitem {
   margin: 20px auto;
 }
 
@@ -525,34 +557,40 @@ p {
 #rh {
   width: 100%;
   height: auto;
-  background: rgb(255,255,255);
-  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(236,230,181,1) 41%, rgba(192,243,254,1) 100%);  text-align: center;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(236, 230, 181, 1) 41%,
+    rgba(192, 243, 254, 1) 100%
+  );
+  text-align: center;
   justify-content: center;
   align-items: center;
 }
 
-#rh h2{
+#rh h2 {
   background-image: linear-gradient(
     to right,
-    #1d014a 0,
-          #4846c7 22%, 
+    #270066 0,
+    #4846c7 22%,
 
-    #956eae 55%,
-    #4b0268 78%,
-    #090014 100%
-    );
-    color:transparent;
-    -webkit-background-clip:text;
+    #5d3774 55%,
+    #7500a3 78%,
+    #2a025b 100%
+  );
+  color: transparent;
+  -webkit-background-clip: text;
 }
 
-#rh .rhlottie{
+#rh .rhlottie {
   display: inline-block;
   text-align: center;
   justify-content: center;
   align-items: center;
 }
 
-.rhconjunto-caracteristicas{
+.rhconjunto-caracteristicas {
   margin-top: -70px;
 }
 
@@ -560,37 +598,32 @@ p {
 # Diretoria
 --------------------------------------------------------------*/
 #diretoria {
-  width: 100%; 
+  width: 100%;
   height: auto;
   background-color: #291c04;
   justify-content: center;
   align-items: center;
 }
 
-#diretoria h2{
-   top: 50%;
-   left: 50%;
-   text-align: center;
-   font-family: 'Times New Roman',serif;
-   letter-spacing: 15px;
-   font-size: 40px;
-   font-weight: 700;
-   background-image: linear-gradient(
+#diretoria h2 {
+  top: 50%;
+  left: 50%;
+  font-size: 40px;
+  background-image: linear-gradient(
     to right,
     #462523 0,
-          #cb9b51 22%, 
+    #cb9b51 22%,
     #f6e27a 45%,
     #f6f2c0 50%,
     #f6e27a 55%,
     #cb9b51 78%,
     #462523 100%
-    );
-   color:transparent;
-   -webkit-background-clip:text;
+  );
+  color: transparent;
+  -webkit-background-clip: text;
 }
 
-#diretoria h3{
-  
+#diretoria h3 {
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -602,11 +635,11 @@ p {
     rgb(86, 85, 85) 22%,
     rgb(184, 184, 184) 50%,
     rgb(255, 255, 255) 65%,
-    rgb(180, 180, 180) 80%, 
+    rgb(180, 180, 180) 80%,
     #676767 100%
-    );
-    color:transparent;
-    -webkit-background-clip:text;
+  );
+  color: transparent;
+  -webkit-background-clip: text;
 }
 
 .titulosnumerosdiretoria {
@@ -619,23 +652,22 @@ p {
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
-.diretoria-container{
+.diretoria-container {
   text-align: center;
   justify-content: center;
   align-items: center;
   background: url("/assets/img/dinheiros.jpg") repeat scroll center center/cover;
   opacity: 0.5;
   margin: 0 7px;
-  z-index: -1; 
+  z-index: -1;
 }
 
-.diretoria-container img{
+.diretoria-container img {
   height: 40vh;
   max-width: 100%;
   text-align: center;
   justify-content: center;
   align-items: center;
-
 }
 
 .numerosdiretoria {
@@ -648,98 +680,131 @@ p {
   fill: #fff;
   background-color: black;
 
-  text-shadow: 0px 0px 4px rgba(255,255,255,0.7);
+  text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.7);
 }
 
-#diretoria .numerosdiretoria{
+#diretoria .numerosdiretoria {
   background-color: black;
 }
 
-#diretoria p{
+#diretoria p {
   text-align: justify;
-  font-size: 25px;
-  font-weight: 500;
+  font-weight: 400;
   opacity: 1;
   background-image: linear-gradient(
     to left,
     #efefef 0,
     #fff 22%,
-    #ddd 60%, 
+    #ddd 60%,
     #9a9a9a 100%
-    );
-    color:transparent;
-    -webkit-background-clip:text;
+  );
+  color: transparent;
+  -webkit-background-clip: text;
 }
 
 /*--------------------------------------------------------------
 # Lojas
 --------------------------------------------------------------*/
 #lojas {
-  width: 100%; 
+  width: 100%;
   height: auto;
-  background: rgb(255,0,0);
-  background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgb(255, 93, 93) 36%,rgb(255, 77, 77) 48%, rgb(255, 46, 46) 62%, rgba(255,0,0,1) 100%);
+  background: rgb(255, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgb(255, 93, 93) 36%,
+    rgb(255, 77, 77) 48%,
+    rgb(255, 46, 46) 62%,
+    rgba(255, 0, 0, 1) 100%
+  );
 }
 
-#lojas h2{
+#lojas h2 {
   color: rgb(245, 245, 245);
 }
 
-#lojas h3{
+#lojas h3 {
   color: rgb(237, 235, 235);
+}
+
+.comparalojas {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.lojasemfelicidade {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  height: max-content;
 }
 
 /*--------------------------------------------------------------
 # Marketing
 --------------------------------------------------------------*/
 #marketing {
-  width: 100%; 
+  width: 100%;
   height: auto;
   background: linear-gradient(230deg, #ff0000, #0042ff, #ff0000);
-    background-size: 600% 600%;
+  background-size: 600% 600%;
 
-    -webkit-animation: AnimationName 20s ease infinite;
-    -moz-animation: AnimationName 20s ease infinite;
-    animation: AnimationName 20s ease infinite;
-    @-webkit-keyframes AnimationName {
-      0%{background-position:0% 51%}
-      50%{background-position:100% 50%}
-      100%{background-position:0% 51%}
+  -webkit-animation: AnimationName 20s ease infinite;
+  -moz-animation: AnimationName 20s ease infinite;
+  animation: AnimationName 20s ease infinite;
+  @-webkit-keyframes AnimationName {
+    0% {
+      background-position: 0% 51%;
     }
-    @-moz-keyframes AnimationName {
-        0%{background-position:0% 51%}
-        50%{background-position:100% 50%}
-        100%{background-position:0% 51%}
+    50% {
+      background-position: 100% 50%;
     }
-    @keyframes AnimationName {
-        0%{background-position:0% 51%}
-        50%{background-position:100% 50%}
-        100%{background-position:0% 51%}
+    100% {
+      background-position: 0% 51%;
     }
+  }
+  @-moz-keyframes AnimationName {
+    0% {
+      background-position: 0% 51%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 51%;
+    }
+  }
+  @keyframes AnimationName {
+    0% {
+      background-position: 0% 51%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 51%;
+    }
+  }
 
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
-#marketing h2{
-  font-size: 25px;
-  font-weight: 700;
+#marketing h2 {
   opacity: 0.9;
   background-image: linear-gradient(
     to left,
     #efefef 0,
     #fff 22%,
-    #ddd 60%, 
+    #ddd 60%,
     #9a9a9a 100%
-    );
-    color:transparent;
+  );
+  color: transparent;
 }
 
-#marketing .marketinglottie{
+#marketing .marketinglottie {
   display: inline-block;
 }
-
 
 /*--------------------------------------------------------------
 # Breadcrumbs
@@ -800,7 +865,7 @@ p {
     height: 90vh;
     width: 100%;
   }
-  
+
   #hero .hero-content {
     height: 40vh;
     text-align: left;
@@ -812,21 +877,18 @@ p {
   #hero .logo-inicio {
     margin-top: 80vh;
   }
-  .hero-content h1 {  
+  .hero-content h1 {
     font-size: 22px;
     font-weight: 700;
     margin-bottom: 10px;
     text-transform: uppercase;
     color: #fff;
   }
-  
-  .hero-content p {  
-    font-size: 14px;
 
+  .hero-content p {
+    font-size: 14px;
   }
 }
-
-
 
 /*--------------------------------------------------------------
 # Services
@@ -882,12 +944,12 @@ p {
   height: auto;
   width: 100%;
   color: white;
-  background: url("/assets/img/wood.jpg")
+  background: url("/assets/img/wood.jpg");
 }
 
-#contact h2{
+#contact h2 {
+  letter-spacing: 10px;
   color: white;
-  font-size: x-large;
 }
 
 #contact .contact-block1 {
@@ -903,7 +965,8 @@ p {
   padding-bottom: 10px;
 }
 
-#contact input, #contact textarea {
+#contact input,
+#contact textarea {
   width: 100%;
   margin-bottom: 5px;
 }
@@ -911,7 +974,6 @@ p {
 #contact textarea {
   min-height: 160px;
 }
-
 
 .php-email-form .error-message {
   display: none;
@@ -1573,74 +1635,73 @@ blockquote {
   }
 }
 
-.video{
+.video {
   text-align: center;
   width: 100%;
 }
 
-ul,li{
-  list-style:none;
+ul,
+li {
+  list-style: none;
 }
-ul{
-  font-family: 'Reenie Beanie';
+ul {
+  font-family: "Reenie Beanie";
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.postit{
-  font-family: 'Cabin Sketch', cursive;
-  color:black;
-  background:#cfc;
-  height:10em;
-  width:10em;
-  padding:1em;
-  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
-  transition: transform .15s linear;
-  z-index:2;
+.postit {
+  font-family: "Cabin Sketch", cursive;
+  color: black;
+  background: #cfc;
+  height: 10em;
+  width: 10em;
+  padding: 1em;
+  box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+  transition: transform 0.15s linear;
+  z-index: 2;
 }
 
-.postit-esquerda{
+.postit-esquerda {
   transform: rotate(-6deg);
 }
 
-.postit-direita{
+.postit-direita {
   transform: rotate(9deg);
 }
-.postit-reto{
+.postit-reto {
   transform: rotate(2deg);
 }
 
-.postit-esquerda-leve{
+.postit-esquerda-leve {
   transform: rotate(-2);
 }
 
-.postit-verde{
-  color:black;
-  background:#cfc;
+.postit-verde {
+  color: black;
+  background: #cfc;
 }
 
-.postit-amarelo{
-  color:black;
-  background:rgb(247, 255, 137);
+.postit-amarelo {
+  color: black;
+  background: rgb(247, 255, 137);
 }
 
-.postit-rosa{
-  color:black;
-  background:rgb(255, 173, 179);
+.postit-rosa {
+  color: black;
+  background: rgb(255, 173, 179);
 }
 
-.postit-azul{
-  color:black;
-  background:rgb(137, 202, 255);
+.postit-azul {
+  color: black;
+  background: rgb(137, 202, 255);
 }
 
-.postit:hover , .postit:focus  {
-  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+.postit:hover,
+.postit:focus {
+  box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.7);
   transform: scale(1.25);
-  position:relative;
-  z-index:5;
+  position: relative;
+  z-index: 5;
 }
-
-
-
