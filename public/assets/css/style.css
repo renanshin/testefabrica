@@ -552,6 +552,10 @@ p {
   align-items: center;
 }
 
+.rhconjunto-caracteristicas{
+  margin-top: -70px;
+}
+
 /*--------------------------------------------------------------
 # Diretoria
 --------------------------------------------------------------*/
@@ -1585,6 +1589,7 @@ ul{
 }
 
 .postit{
+  font-family: 'Cabin Sketch', cursive;
   color:black;
   background:#cfc;
   height:10em;
@@ -1592,6 +1597,7 @@ ul{
   padding:1em;
   box-shadow: 5px 5px 7px rgba(33,33,33,.7);
   transition: transform .15s linear;
+  z-index:2;
 }
 
 .postit-esquerda{
