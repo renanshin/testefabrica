@@ -1656,8 +1656,8 @@ ul {
   color: black;
   background: #cfc;
   height: 10em;
-  width: 10em;
-  padding: 1em;
+  width: 2em;
+  padding: 3px;
   box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
   transition: transform 0.15s linear;
   z-index: 2;
@@ -1704,4 +1704,56 @@ ul {
   transform: scale(1.25);
   position: relative;
   z-index: 5;
+}
+
+#cupom {
+  display: none;
+  background-color: transparent;
+  position: fixed;
+  transform: translate(-50%, 0);
+  left: 0;
+  top: 20%;
+  width: 83%;
+  z-index: 99;
+  animation: zoominoutsinglefeatured 1s infinite;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#cupom img {
+  background: black;
+  background-clip: content-box;
+  width: 100%;
+  height: auto;
+  border-radius: 8%;
+  border: solid 5px rgba(0, 0, 0, 0.3);
+  transform: rotate(-5deg);
+}
+
+#cupom .logo-promo {
+  height: 100px;
+  width: auto;
+}
+
+#cupom p {
+  text-align: center;
+}
+
+@keyframes zoominoutsinglefeatured {
+  0% {
+    transform: scale(0.8, 0.8);
+  }
+  50% {
+    transform: scale(0.9, 0.9);
+  }
+  100% {
+    transform: scale(0.8, 0.8);
+  }
 }

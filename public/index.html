@@ -93,6 +93,10 @@
   <!-- ======= Hero Section ======= -->
   <div id="hero" class="home">
     <div class="container">
+      <div id="cupom">
+        
+        <img src="assets/img/cartaopresentedourado.png" class="logo glow" alt="" />
+      </div>
       <div class="hero-content">
         <p class="logo-inicio">
           <img src="assets/img/logo-sem-fundo.png" class="logo glow" alt="" />
@@ -116,18 +120,6 @@
           </li>
         </ul>
 
-        <script src="https://cdn.jsdelivr.net/npm/js-confetti@0.8.0/dist/js-confetti.browser.js"></script>
-        <script>
-          const jsConfetti = new JSConfetti();
-
-          setTimeout(() => {
-            jsConfetti.addConfetti({
-              emojis: ['😃', '😁', '🥰', '🤑', '🎉', '💲'],
-              emojiSize: 60,
-              confettiNumber: 120,
-            })
-          }, 900)
-        </script>
       </div>
     </div>
   </div>
@@ -159,8 +151,7 @@
           <div class="rhconjunto-caracteristicas row">
             <div class="postit postit-esquerda postit-verde col">Melhorar clima organizacional</div>
             <div class="postit postit-direita postit-rosa col">Integração de colaboradores</div>
-            <div class="postit postit-esquerda-leve postit-amarelo col">Estreitar o relacionamento entre
-              colaboradores/família com a empresa</div>
+            <div class="postit postit-esquerda-leve postit-amarelo col">Estreitar o relacionamento colaborador / empresa</div>
           </div>
         </div>
         <!-- ======= Fim 1º conjunto RH ======= -->
@@ -187,7 +178,7 @@
           <div class="rhconjunto-caracteristicas row">
 
             <div class="postit postit-direita postit-amarelo col col">Datas comemorativas</div>
-            <div class="postit postit-reto postit-rosa col col">Comemoração de metas/conquistas</div>
+            <div class="postit postit-reto postit-rosa col col">Comemoração de metas e conquistas</div>
             <div class="postit postit-esquerda postit-azul col col">Metas atingidas</div>
 
           </div>
@@ -220,7 +211,7 @@
         <!-- ======= Fim 5º conjunto RH ======= -->
         
 
-        <div class="services-slider swiper paddsection" data-aos="zoom-out-right" data-aos-duration="2000">
+        <div class="services-slider swiper paddsection" data-aos="zoom-in-down" data-aos-duration="2000">
           <div class="swiper-wrapper">
             <div class="swiper-slide" data-swiper-autoplay="3000" data-swiper-zoom="5">
               <div class="services-block">
@@ -322,7 +313,7 @@
         </div>
       </div>
 
-      <div class="container" data-aos="zoom-in-left" data-aos-duration="2000">
+      <div class="container" data-aos="zoom-out-down" data-aos-duration="2000">
         <div class="section-header">
           <p>
             Nossa gama de soluções que impactam positivamente seus
@@ -419,23 +410,23 @@
           </div>
           <div class="fideliza">
             <h3>Cliente Fideliza</h2>
-            <img src="assets/img/clientefidelizado.jpg" class="img-fluid" alt="" />
+            <img data-aos="zoom-out-down" data-aos-duration="1000" src="assets/img/clientefidelizado.jpg" class="img-fluid" alt="" />
           </div>
           <div class="relacaoduradoura">
             <h3>Relação duradoura com o cliente</h2>
-            <img src="assets/img/relacaoduradoura.jpg" class="img-fluid" alt="" />
+            <img data-aos="zoom-out-down" data-aos-duration="1000" src="assets/img/relacaoduradoura.jpg" class="img-fluid" alt="" />
           </div>
           <div class="clientesapoiam">
             <h3>Clientes apoiam a loja</h2>
-            <img src="assets/img/clientesapoio.jpeg" class="img-fluid" alt="" />
+            <img data-aos="zoom-out-down" data-aos-duration="1000" src="assets/img/clientesapoio.jpeg" class="img-fluid" alt="" />
           </div>
           <div class="torcem">
             <h3>Clientes torcem pela loja</h2>
-            <img src="assets/img/clientestorcendo.jpg" class="img-fluid" alt="" />
+            <img data-aos="zoom-out-down" data-aos-duration="1000" src="assets/img/clientestorcendo.jpg" class="img-fluid" alt="" />
           </div>
           
           <div class="textomarketing">
-            <p data-aos="zoom-out-up" data-aos-duration="1000">Para lojistas, inaugurando ou com empreendimentos já existentes, temos uma solução ideal!
+            <p>Para lojistas, inaugurando ou com empreendimentos já existentes, temos uma solução ideal!
               Atrair clientes, estimulando fidelizá-los com uma relação duradoura. Clientes mais felizes
               apoiam a loja e torcem como se fosse do seu time.</p>
             <p>No final tem clientes mais satisfeitos e maior retorno. Não deixe de aproveitar essa
@@ -551,11 +542,32 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-confetti@0.8.0/dist/js-confetti.browser.js"></script>
+  <script>
+    const jsConfetti = new JSConfetti();
+
+  </script>
 
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
+    function clickBody() {
+      document.getElementById("cupom").style.display = "none";
+      jogaConfete()
+    }
+    document.body.addEventListener("click", clickBody)
+    setTimeout(() => {
+      document.getElementById("cupom").style.display = "block"
+    }, 11000)
+      
+    function jogaConfete() {
+      jsConfetti.addConfetti({
+        emojis: ['😃', '😁', '🥰', '🤑', '🎉', '💲'],
+        emojiSize: 60,
+        confettiNumber: 120
+    })}
+
   </script>
   
 

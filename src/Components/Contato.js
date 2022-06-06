@@ -59,12 +59,11 @@ const QuizContainerEnd = styled.div`
 
 const TimeCards = styled.div`
   display: flex;
-  justifyContent: center;
+  justifycontent: center;
   @media screen and (max-width: 500px) {
     flex-direction: column;
   }
 `;
-
 
 const Contato = () => {
   return (
@@ -79,7 +78,9 @@ const Contato = () => {
 
       <TimeCards>
         <Tilt>
-          <QuizContainer>
+          <QuizContainer
+            style={{ background: "rgba(3, 252, 255, 0.3)", borderRadius: 15 }}
+          >
             {/* Shin Card*/}
             <Card sx={{ maxWidth: 345, borderRadius: 15 }}>
               <CardMedia
@@ -114,7 +115,9 @@ const Contato = () => {
         </Tilt>
 
         <Tilt>
-          <QuizContainerMiddle>
+          <QuizContainerMiddle
+            style={{ background: "rgba(252, 244, 3, 0.3)", borderRadius: 15 }}
+          >
             {/* Miyagi Card*/}
             <Card sx={{ maxWidth: 345, borderRadius: 15 }}>
               <CardMedia
@@ -145,7 +148,9 @@ const Contato = () => {
 
         {/* Tati Card*/}
         <Tilt>
-          <QuizContainerEnd>
+          <QuizContainerEnd
+            style={{ background: "rgba(252, 3, 219, 0.3)", borderRadius: 10 }}
+          >
             <Card sx={{ maxWidth: 345, borderRadius: 15 }}>
               <CardMedia
                 component="img"
