@@ -73,8 +73,13 @@ const Contato = () => {
         style={{ display: "flex", justifyContent: "center" }}
       >
         <h2>Nosso Time</h2>
-        <p>Mexa o celular para ver o efeito</p>
       </div>
+      <span
+        className="dicanossotime"
+        style={{ fontSize: "10px", color: "#bbb" }}
+      >
+        Mexa o celular para ver o efeito
+      </span>
 
       <TimeCards>
         <Tilt>

@@ -67,6 +67,7 @@ h2 {
 }
 h3 {
   font-size: 1.75rem;
+  margin-top: 25px;
 }
 
 h4 {
@@ -609,6 +610,8 @@ p {
   top: 50%;
   left: 50%;
   font-size: 40px;
+  margin: 60px 0 0;
+  letter-spacing: 1px;
   background-image: linear-gradient(
     to right,
     #462523 0,
@@ -631,12 +634,12 @@ p {
   opacity: 1;
   background-image: linear-gradient(
     to left,
-    #989898 0,
+    #aaaaaa 0,
     rgb(86, 85, 85) 22%,
     rgb(184, 184, 184) 50%,
     rgb(255, 255, 255) 65%,
     rgb(180, 180, 180) 80%,
-    #676767 100%
+    #888888 100%
   );
   color: transparent;
   -webkit-background-clip: text;
@@ -657,7 +660,7 @@ p {
   justify-content: center;
   align-items: center;
   background: url("/assets/img/dinheiros.jpg") repeat scroll center center/cover;
-  opacity: 0.5;
+  opacity: 1;
   margin: 0 7px;
   z-index: -1;
 }
@@ -673,6 +676,7 @@ p {
 .numerosdiretoria {
   text-align: center;
   padding-top: 20px;
+  color: #dddddd;
   padding-bottom: 10px;
   font-size: 38px;
   font-weight: 700;
@@ -696,10 +700,14 @@ p {
     #efefef 0,
     #fff 22%,
     #ddd 60%,
-    #9a9a9a 100%
+    #aaaaaa 100%
   );
   color: transparent;
   -webkit-background-clip: text;
+}
+
+.section-description {
+  margin-bottom: 90px;
 }
 
 /*--------------------------------------------------------------
@@ -725,6 +733,11 @@ p {
 
 #lojas h3 {
   color: rgb(237, 235, 235);
+  margin-top: 25px;
+}
+
+#lojas p {
+  color: #cdcdcd;
 }
 
 .comparalojas {
@@ -800,6 +813,8 @@ p {
     #9a9a9a 100%
   );
   color: transparent;
+
+  -webkit-background-clip: text;
 }
 
 #marketing .marketinglottie {
@@ -899,13 +914,17 @@ p {
   padding-bottom: 80px;
 }
 
+.swiper {
+  margin-top: 50px;
+}
+
 .services-block span {
   margin: 10px 0;
   position: relative;
   font-size: 13px;
-  color: #292929;
+  color: #a59252;
   letter-spacing: 0.1em;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
   display: block;
 }
@@ -1640,6 +1659,9 @@ blockquote {
   width: 100%;
 }
 
+#background-video {
+}
+
 ul,
 li {
   list-style: none;
@@ -1653,7 +1675,7 @@ ul {
 
 .postit {
   font-family: "Cabin Sketch", cursive;
-  color: black;
+  color: rgb(124, 124, 124);
   background: #cfc;
   height: 10em;
   width: 2em;
@@ -1679,22 +1701,18 @@ ul {
 }
 
 .postit-verde {
-  color: black;
   background: #cfc;
 }
 
 .postit-amarelo {
-  color: black;
   background: rgb(247, 255, 137);
 }
 
 .postit-rosa {
-  color: black;
   background: rgb(255, 173, 179);
 }
 
 .postit-azul {
-  color: black;
   background: rgb(137, 202, 255);
 }
 
@@ -1756,4 +1774,9 @@ ul {
   100% {
     transform: scale(0.8, 0.8);
   }
+}
+
+.cinema {
+  background: url("/assets/img/cinema.jpg") no-repeat scroll center center/cover;
+  padding: 40px 0;
 }
