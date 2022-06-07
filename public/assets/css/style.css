@@ -1830,6 +1830,21 @@ ul {
   padding: 40px 0;
 }
 
+.youtube-img {
+  width: 100%;
+}
+
+.youtube {
+  font-weight: bold;
+  padding: 40px 0;
+}
+
+.titleyoutube {
+  font-size: 40px;
+  font-weight: bolder;
+  padding-bottom: inherit;
+}
+
 #solucoes {
   color: white;
   margin: 27px auto 4;
