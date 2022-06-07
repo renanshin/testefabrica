@@ -10,16 +10,16 @@ import React from "react";
 
 const QuizContainer = styled.div`
   padding: 10px 10px 0 10px;
-  border: 2px solid #880000;
+  border: 2px solid #333333;
   box-shadow: -1px 1px #777777, -2px 2px #777777, -4px 3px #777777,
-    -6px 4px #777777, -8px 5px #777777;
+    -6px 4px #777777, -12px 8px #777777;
   width: 100%;
   max-width: 350px;
   padding-top: 15px;
-  margin: auto 10%;
+  margin: 10px 10%;
   transform: rotate(-3deg);
   @media screen and (max-width: 500px) {
-    margin: auto;
+    margin: 10px;
     padding: 15px;
     max-width: 350px;
   }
@@ -27,32 +27,32 @@ const QuizContainer = styled.div`
 
 const QuizContainerMiddle = styled.div`
   padding: 10px 10px 0 10px;
-  border: 2px solid #880000;
+  border: 2px solid #333333;
   box-shadow: -1px 1px #777777, -2px 2px #777777, -4px 3px #777777,
-    -6px 4px #777777, -8px 5px #777777;
+    -6px 4px #777777, -12px 8px #777777;
   width: 100%;
   max-width: 350px;
   padding-top: 15px;
-  margin: auto 10%;
+  margin: 10px 10%;
   transform: rotate(3deg);
   @media screen and (max-width: 500px) {
-    margin: auto;
+    margin: 10px;
     padding: 15px;
   }
 `;
 
 const QuizContainerEnd = styled.div`
   padding: 10px 10px 0 10px;
-  border: 2px solid #880000;
+  border: 2px solid #333333;
   box-shadow: -1px 1px #777777, -2px 2px #777777, -4px 3px #777777,
-    -6px 4px #777777, -8px 5px #777777;
+    -6px 4px #777777, -12px 8px #777777;
   width: 100%;
   max-width: 350px;
   padding-top: 15px;
-  margin: auto 10%;
+  margin: 10px 10%;
   transform: rotate(-3deg);
   @media screen and (max-width: 500px) {
-    margin: auto;
+    margin: 10px;
     padding: 15px;
   }
 `;
