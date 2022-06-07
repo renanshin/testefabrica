@@ -1803,13 +1803,13 @@ ul {
 
 @keyframes zoominoutsmoothsinglefeatured {
   0% {
-    transform: scale(0.89, 0.89);
+    transform: scale(0.88, 0.89);
   }
   50% {
     transform: scale(0.9, 0.9);
   }
   100% {
-    transform: scale(0.89, 0.89);
+    transform: scale(0.88, 0.89);
   }
 }
 
@@ -1872,4 +1872,5 @@ ul {
   color: white;
   cursor: pointer;
   width: 100px;
+  padding: 1em 3em;
 }
