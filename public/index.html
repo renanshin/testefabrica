@@ -89,14 +89,18 @@
   </header>
   <!-- End Header -->
 
+  <!-- ======= Promo Section ======= -->
+  <div id="containerpromo">
+    <p style="font-size: 10px;">Fechar [X]</p>
+    <div id="cupom">  
+      <img src="assets/img/Cartaopresentedourado.png" class="logo glow-gold" alt="" />
+    </div>
+  </div>
+  
 
   <!-- ======= Hero Section ======= -->
   <div id="hero" class="home">
     <div class="container">
-      <div id="cupom">
-        
-        <img src="assets/img/Cartaopresentedourado.png" class="logo glow" alt="" />
-      </div>
       <div class="hero-content">
         <p class="logo-inicio">
           <img src="assets/img/logo-sem-fundo.png" class="logo glow" alt="" />
@@ -557,13 +561,13 @@
   <script>
     AOS.init();
     function clickBody() {
-      document.getElementById("cupom").style.display = "none";
+      document.getElementById("containerpromo").style.display = "none";
       jogaConfete()
     }
     document.body.addEventListener("click", clickBody)
     setTimeout(() => {
-      document.getElementById("cupom").style.display = "block"
-    }, 11000)
+      document.getElementById("containerpromo").style.display = "block"
+    }, 1000) // voltar 11000
       
     function jogaConfete() {
       jsConfetti.addConfetti({
