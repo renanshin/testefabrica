@@ -130,15 +130,20 @@
   <!-- End Hero -->
 
   <div id="menu" class="menu paddsection">
-    <h2>Menu</h2>
-    <div class="menuitem glow-menu"><a href="#rh">Solução RH</a></div>
-    <div class="menuitem glow-menu">
-      <a href="#diretoria">Solução Diretoria</a>
+    <h2>Soluções</h2>
+    <div id="solucoes" >
+      
+      <div class="menuitem glow-menu"><a href="#rh"><i class="bi bi-people"></i> RH</a></div>
+      <div class="menuitem glow-menu">
+        <a href="#diretoria"><i class="bi bi-briefcase"></i> Diretoria</a>
+      </div>
+      <div class="menuitem glow-menu"><a href="#lojas"><i class="bi bi-shop"></i> Lojas</a></div>
+      <div class="menuitem glow-menu"><a href="#marketing"><i class="bi bi-boxes"></i> Marketing</a></div>
+      <div class="menuitem glow-menu"><a href="#nossotime"> Nosso Time</a></div>
+      <div class="menuitem glow-menu"><a href="#contact">Depoimentos</a></div>
     </div>
-    <div class="menuitem glow-menu"><a href="#lojas">Solução Lojas</a></div>
-    <div class="menuitem glow-menu"><a href="#marketing">Solução Marketing</a></div>
-    <div class="menuitem glow-menu"><a href="#nossotime">Nosso Time</a></div>
-    <div class="menuitem glow-menu"><a href="#contact">Depoimentos</a></div>
+
+    
   </div>
   <!-- End Menu -->
 
@@ -191,7 +196,7 @@
         <div class="rhconjunto" data-aos="zoom-out-up" data-aos-duration="1000">
           <div class="rhlottie">
             <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_4jsnlwpe.json" background="transparent"
-              speed="1" style="width: 300px; height: 300px" margin="0 auto" loop autoplay></lottie-player>
+              speed="1" style="width: 300px; height: 200px; margin:50px 0"  loop autoplay></lottie-player>
           </div>
           <div class="rhconjunto-caracteristicas row">
             <div class="postit postit-esquerda postit-azul col col">Menos Doenças psicológicas</div>
@@ -400,34 +405,34 @@
       <div id="lojas" class="paddsection">
         <div class="container">
           <h2>Para Lojas</h2>
-          <div class="comparalojas" data-aos="zoom-in-up" data-aos-duration="1000">
+          <div class="comparalojas row" data-aos="zoom-in-up" data-aos-duration="1000">
             <div class="lojasemfelicidade col">
-              <h3>Loja sem Felicidade</h2>
-              <img src="assets/img/lojavazia.jpeg" class="img-fluid" alt="" />
+              <h3>Loja sem Felicidade</h3>
+              <img src="assets/img/lojavazia.jpeg" class="img-fluid"  alt="" />
             </div>
-            <div class="lojacomfelicidade col" data-aos="zoom-in-up" data-aos-duration="1000">
-              <h3>Loja com Felicidade</h2>
+            <div class="lojacomfelicidade col">
+              <h3>Loja com Felicidade</h3>
               <img src="assets/img/lojacheia.jpg" class="img-fluid" alt="" />
             </div>
           </div>
           <div class="compramais" data-aos="zoom-in-up" data-aos-duration="1000">
-            <h3>Cliente compra mais</h2>
+            <h3>Cliente compra mais</h3>
             <img src="assets/img/clientecompramais.jpg" class="img-fluid" alt="" />
           </div>
           <div class="fideliza">
-            <h3>Cliente Fideliza</h2>
+            <h3>Cliente Fideliza</h3>
             <img data-aos="zoom-out-down" data-aos-duration="1000" src="assets/img/clientefidelizado.jpg" class="img-fluid" alt="" />
           </div>
           <div class="relacaoduradoura">
-            <h3>Relação duradoura com o cliente</h2>
+            <h3>Relação duradoura com o cliente</h3>
             <img data-aos="zoom-out-down" data-aos-duration="1000" src="assets/img/relacaoduradoura.jpg" class="img-fluid" alt="" />
           </div>
           <div class="clientesapoiam">
-            <h3>Clientes apoiam a loja</h2>
+            <h3>Clientes apoiam a loja</h3>
             <img data-aos="zoom-out-down" data-aos-duration="1000" src="assets/img/clientesapoio.jpeg" class="img-fluid" alt="" />
           </div>
           <div class="torcem">
-            <h3>Clientes torcem pela loja</h2>
+            <h3>Clientes torcem pela loja</h3>
             <img data-aos="zoom-out-down" data-aos-duration="1000" src="assets/img/clientestorcendo.jpg" class="img-fluid" alt="" />
           </div>
           
@@ -567,7 +572,7 @@
     document.body.addEventListener("click", clickBody)
     setTimeout(() => {
       document.getElementById("containerpromo").style.display = "block"
-    }, 1000) // voltar 11000
+    }, 11000)
       
     function jogaConfete() {
       jsConfetti.addConfetti({
