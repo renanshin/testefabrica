@@ -409,6 +409,7 @@
             <div class="lojasemfelicidade col">
               <h3>Loja sem Felicidade</h3>
               <img src="assets/img/lojavazia.jpeg" class="img-fluid"  alt="" />
+
             </div>
             <div class="lojacomfelicidade col">
               <h3>Loja com Felicidade</h3>
@@ -482,6 +483,93 @@
                   <h2 class="mb-20">Depoimentos</h2>
                 </div>
               </div>
+
+
+
+
+              <section id="testimonials" class="testimonials">
+                <div class="container position-relative">
+          
+                  <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+                    <div class="swiper-wrapper">
+          
+                      <div class="swiper-slide">
+                        <div class="testimonial-item">
+                          <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                          <h3>John Sandman</h3>
+                          <h4>CEO &amp; Founder</h4>
+                          <p>
+                            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                            Após a incrível experiência com a Fábrica de Felicidade na nossa empresa, o clima organizacional está irreconhecível. Estou muito satisfeito.
+                            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                          </p>
+                        </div>
+                      </div><!-- End testimonial item -->
+          
+                      <div class="swiper-slide">
+                        <div class="testimonial-item">
+                          <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                          <h3>Sara Chen</h3>
+                          <h4>Marketing</h4>
+                          <p>
+                            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                            Nosso lançamento da água saborizada foi um sucesso pelo evento que contratamos a Fábrica de Felicidade.
+                            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                          </p>
+                        </div>
+                      </div><!-- End testimonial item -->
+          
+                      <div class="swiper-slide">
+                        <div class="testimonial-item">
+                          <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                          <h3>Lorena Thompson</h3>
+                          <h4>Gerente de RH</h4>
+                          <p>
+                            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                            Conseguimos despertar algo inacreditável nos nossos colaboradores. Foi o melhor evento que podíamos ter realizado.
+                            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                          </p>
+                        </div>
+                      </div><!-- End testimonial item -->
+          
+                      <div class="swiper-slide">
+                        <div class="testimonial-item">
+                          <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                          <h3>Matt Jordan</h3>
+                          <h4>Dono Mercado Brasil</h4>
+                          <p>
+                            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                            Que inauguração incrível que fizemos na nossa filial ABC! Sr.Miagui é o cara!
+                            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                          </p>
+                        </div>
+                      </div><!-- End testimonial item -->
+          
+                      <div class="swiper-slide">
+                        <div class="testimonial-item">
+                          <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                          <h3>John Larson</h3>
+                          <h4>Diretor de Vendas</h4>
+                          <p>
+                            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                            Conseguimos formar apenas colaboradores em um time de fato. Qubramos a barreira que impedia uma boa comunicação e a gratidão foi enraizada em nós.
+                            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                          </p>
+                        </div>
+                      </div><!-- End testimonial item -->
+          
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+          
+                </div>
+              </section><!-- End Testimonials Section -->
+
+
+
+
+
+
               <h3 class="mb-30">Deixe seu depoimento</h3>
               <div class="col-lg-6">
                 <form action="forms/contact.php" method="post" role="form" class="php-email-form">
@@ -588,6 +676,22 @@
         emojiSize: 50,
         confettiNumber: 120
     })}
+
+
+    new Swiper('.testimonials-slider', {
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    }
+  });
 
   </script>
   
